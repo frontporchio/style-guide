@@ -17,4 +17,5 @@ Samantha Warren introduced us to the great idea of presenting designed web eleme
 
 ## TO DOs: 
 
- - fix svg masks in Firefox
+ - fix svg masks in Firefox [like this](https://css-tricks.com/sketchy-avatars-css-clip-path/)
+ - MOAR refactoring
