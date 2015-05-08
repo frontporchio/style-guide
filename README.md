@@ -6,11 +6,11 @@ A style prototype is a single HTML page which outlines site colors, typography, 
 
 Samantha Warren introduced us to the great idea of presenting designed web elements to clients before creating full site comps. She refers to her Photoshop-based creations as [Style Tiles](http://styletil.es), and they contain most of the same elements that a Style Prototype typically would. However, a Style Prototype takes things one step further into the medium of the web. Rather than present the client a JPG of your Photoshop document, show them a responsive HTML/CSS Style Prototype instead.
 
-[See it in action here.](http://frontporch.github.io/style-prototype/)
+[See it in action here.](http://frontporchio.github.io/style-prototype/)
 
 ## Building the project
 
-1. Clone the repo: `git clone https://github.com/frontporch/style-prototype.git`
+1. Clone the repo: `git clone https://github.com/frontporchio/style-prototype.git`
 2. Install Dependencies: `npm install`
 3. Start Server & Compile Sass: `grunt`
 4. `index.html` will open in your browser
