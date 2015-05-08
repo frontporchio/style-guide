@@ -1,0 +1,39 @@
+// COLOR PALETTE
+$magenta: #F12481;
+$yellow: #fcd116;
+$cyan: #00ffff;
+$black: #000000;
+
+$primary: $magenta;
+$secondary: $yellow;
+$neutral: $black;
+$highlight: $cyan;
+
+// FONT STACKS
+$sax: "sax-mono", Consolas, Monaco, "Courier New", Courier, monospace;
+$freight-sans-pro: "freight-sans-pro", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-mono: $sax;
+$font-sans: $freight-sans-pro;
+
+// LENGTHS
+$page-width: 100%;
+$page-width-fallback: 960px;
+$padding: 2em;
+$swatch-margin: 2%;
+
+// OTHER
+$num-colors: 4;
+
+$fix-mqs: false !default;
+$old-ie: false !default;
+
+// z-index reference
+$zindex: (
+  modal     : 9000,
+  overlay   : 8000,
+  dropdown  : 7000,
+  header    : 6000,
+  footer    : 5000,
+  pseduo    : 4000,
+);

@@ -1,0 +1,14 @@
+@function em($target, $context: $base-font-size) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+
+@function rem($target, $context: $base-font-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0rem;
+}
+
+@function px($target, $context: $base-font-size) {
+  @if $target == 0 { @return 0 }
+  @return $target * $context + 0px;
+}

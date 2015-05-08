@@ -1,0 +1,12 @@
+{
+  "name": "front-porch-styles",
+  "title": "Front Porch Style Prototype",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-browser-sync": "^1.9.2",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

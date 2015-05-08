@@ -1,0 +1,29 @@
+.nav {
+  font-family: $font-mono;
+  text-transform: uppercase;
+  &-item { 
+    display: inline-block;
+    position: relative;
+    font-size: 1.25em;
+    &:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      right: 30px;
+      bottom: 1px;
+      left: 30px;
+      padding-bottom: 5px;
+      border-bottom: solid 1px $primary;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      opacity: 0;
+    }
+    &:hover:after {
+      position: absolute;
+      right: 10px;
+      left: 10px;
+      opacity: 1;
+    }
+  }
+  a { text-decoration: none; }
+}
