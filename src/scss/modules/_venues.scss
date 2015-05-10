@@ -1,0 +1,21 @@
+.venue {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-right: 1%;
+  @include mq(700px) { width: 48%; }
+  &s { margin-top: 1em; float: left;}
+  &-img {  }
+  .btn {
+    width: auto;
+    color: #fff;
+    text-decoration: none;
+    bottom: 30px; right: 20px;
+  }
+  h2 {
+    position: absolute;
+    z-index: 200;
+    left: 1em; bottom: 1.5em;
+  }
+  h5 { margin-left: 2em; }
+}

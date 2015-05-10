@@ -1,0 +1,78 @@
+.workshop {
+  &s {}
+  &-unit {
+    float: left;
+    width: 100%;
+    margin: 0 1em 1em 0;
+    background: #fff;
+    padding: $padding;
+    position: relative;
+    @include mq(940px) {
+      width: 48%;
+      float: left;
+    }
+    .more { right: -37px; }
+    > button { 
+      float: right;
+      width: auto;
+    }
+    img {
+      transition: all 1s ease;
+      max-width: 100%;
+    }
+    &:nth-of-type(1){
+      img {
+        -webkit-clip-path: polygon(96% 6%, 100% 59%, 68% 100%, 5% 85%, 0 53%, 0 0);
+        clip-path: polygon(96% 6%, 100% 59%, 68% 100%, 5% 85%, 0 53%, 0 0);
+        &:hover {
+          -webkit-clip-path: polygon(100% 0, 100% 53%, 95% 85%, 32% 100%, 0 59%, 4% 6%);
+          clip-path: polygon(100% 0, 100% 53%, 95% 85%, 32% 100%, 100% 59%, 4% 6%);
+        }
+      }
+    }
+    &:nth-of-type(2){
+      img {
+        -webkit-clip-path: polygon(50% 7.5%, 100% 15%, 100% 100%, 50% 92.5%, 0 85%, 0 0);
+        clip-path: polygon(50% 7.5%, 100% 15%, 100% 100%, 50% 92.5%, 0 85%, 0 0);
+        &:hover {
+          -webkit-clip-path: polygon(50% 7.5%, 100% 0, 100% 85%, 50% 92.5%, 0 100%, 0 15%);
+          clip-path: polygon(50% 7.5%, 100% 0, 100% 85%, 50% 92.5%, 0 100%, 0 15%);
+        }
+      }
+    }
+    &:nth-of-type(3){
+      img {
+        -webkit-clip-path: polygon(87% 0, 100% 25%, 100% 90%, 23% 100%, 0 68%, 6% 10%);
+        clip-path: polygon(87% 0, 100% 25%, 100% 90%, 23% 100%, 0 68%, 6% 10%);
+        &:hover {
+          -webkit-clip-path: polygon(13% 0, 94% 10%, 100% 68%, 73% 100%, 0 90%, 0% 25%);
+          clip-path: polygon(13% 0, 94% 10%, 100% 68%, 73% 100%, 0 90%, 0% 25%);         
+        }
+      }
+    }
+    &:nth-of-type(4){
+      img {
+        -webkit-clip-path: polygon(28% 1%, 100% 7%, 100% 75%, 31% 100%, 0 90%, 0 14%);
+        clip-path: polygon(28% 1%, 100% 7%, 100% 75%, 31% 100%, 0 90%, 0 14%);
+        &:hover {
+          -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0); // square
+          clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0); 
+        }
+      }
+    }
+    &:nth-of-type(5){
+      img {
+        -webkit-clip-path: polygon(63% 0, 100% 35%, 88% 100%, 31% 100%, 0 75%, 0 17%);
+        clip-path: polygon(63% 0, 100% 35%, 88% 100%, 31% 100%, 0 75%, 0 17%);
+        &:hover {
+          -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0); // square
+          clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0); 
+        }
+      }
+    }
+  }
+  &-details { 
+    float: left;
+    @include mq(400px) { float: none; padding-left: 230px; }
+  }
+}
