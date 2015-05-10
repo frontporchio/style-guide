@@ -548,7 +548,7 @@ header {
 }
 
 footer {
-  background-color: #fcd116;
+  background-color: #fce600;
   height: 50px;
 }
 
@@ -559,7 +559,7 @@ footer:before {
   top: -36px;
   width: 100%;
   height: 60px;
-  background: #fcd116;
+  background: #fce600;
   -webkit-transform: skewY(-1deg);
   -moz-transform: skewY(-1deg);
   -ms-transform: skewY(-1deg);
@@ -586,7 +586,6 @@ header:before {
 .main {
   float: left;
   width: 100%;
-  padding-bottom: 2em;
   zoom: 1;
   font-size: 1em;
 }
@@ -609,7 +608,7 @@ header:before {
     position: absolute;
     left: 2em;
     top: 2em;
-    padding: 2em;
+    padding: 5em 2em 2em;
     max-width: 20em;
   }
 }
@@ -634,13 +633,13 @@ h1 {
 }
 
 h2 {
-  color: #fcd116;
+  color: #fce600;
   text-transform: uppercase;
 }
 
 h3 {
   text-transform: uppercase;
-  margin: 8px 0;
+  margin: 0;
   line-height: 1;
 }
 
@@ -649,8 +648,17 @@ h4 {
   padding: 0.5em 1.5em 0.4em;
   background: #000000;
   color: white;
-  border-radius: 0 8px 0 0;
   margin: 0;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  z-index: 100;
+}
+
+h5 {
+  margin: 1em 0;
   text-transform: uppercase;
 }
 
@@ -671,7 +679,7 @@ a, a:visited {
   transition: all 500ms ease;
 }
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #fcd116;
+  color: #fce600;
 }
 
 /* SWATCHES */
@@ -753,7 +761,7 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   background-color: #F12481;
 }
 .colors .secondary {
-  background-color: #fcd116;
+  background-color: #fce600;
 }
 .colors .highlight {
   background-color: #00ffff;
@@ -802,6 +810,22 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   padding: .35em .5em;
 }
 
+img {
+  max-width: 100%;
+}
+
+figure {
+  position: relative;
+  float: left;
+  width: 200px;
+}
+
+.full {
+  margin: 6em 2em 2em;
+  float: left;
+  clear: both;
+}
+
 .nav {
   font-family: "sax-mono", Consolas, Monaco, "Courier New", Courier, monospace;
   text-transform: uppercase;
@@ -834,12 +858,12 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   text-decoration: none;
 }
 
-button {
+button, .btn {
   font-family: "sax-mono", Consolas, Monaco, "Courier New", Courier, monospace;
   display: inline-block;
   background-color: transparent;
   border: none;
-  border-radius: 0 8px 0 8px;
+  border-radius: 8px 0 8px 0;
   padding: 0.5em 1.5em 0.4em;
   margin-top: -0.1em;
   text-transform: uppercase;
@@ -853,7 +877,7 @@ button {
   outline: none;
   transition: all 500ms ease;
 }
-button:hover, button:focus {
+button:hover, button:focus, .btn:hover, .btn:focus {
   border: none;
   background: #000000;
 }
@@ -861,7 +885,7 @@ button:hover, button:focus {
 .more {
   position: absolute;
   right: -62px;
-  bottom: 60px;
+  bottom: 40px;
 }
 
 .speakers {
@@ -912,13 +936,6 @@ button:hover, button:focus {
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
 }
-.speaker-name {
-  font-size: 0.875em;
-  position: absolute;
-  top: 1.5em;
-  left: 0;
-  z-index: 100;
-}
 .speaker-links {
   list-style-type: none;
   padding: 0;
@@ -931,7 +948,7 @@ button:hover, button:focus {
   text-transform: uppercase;
   font-family: "sax-mono", Consolas, Monaco, "Courier New", Courier, monospace;
   padding: 0.5em 1em;
-  background: #fcd116;
+  background: #fce600;
   color: #F12481 !important;
   font-size: 0.875em;
   transition: all 1s ease;
@@ -1057,7 +1074,7 @@ button:hover, button:focus {
   font-weight: bold;
 }
 .modal-content a {
-  color: #fcd116;
+  color: #fce600;
 }
 .modal-content a:hover, .modal-content a:focus, .modal-content a:visited {
   color: #000000;
@@ -1132,7 +1149,7 @@ button:hover, button:focus {
   list-style: none;
   float: left;
   width: 100%;
-  margin: 1em 0;
+  margin: 0;
   padding: 0;
 }
 .schedule-list li {
@@ -1151,9 +1168,6 @@ button:hover, button:focus {
 .schedule-list li:after {
   clear: both;
 }
-.schedule-list li:first-child {
-  border-top: 1px solid #000000;
-}
 .schedule-list li time {
   position: absolute;
   top: 1em;
@@ -1161,11 +1175,14 @@ button:hover, button:focus {
   font-family: "sax-mono", Consolas, Monaco, "Courier New", Courier, monospace;
 }
 .schedule-list li .event {
-  min-height: 5.6em;
+  min-height: 3em;
   position: relative;
   width: 80%;
   float: right;
-  padding: 1em 3em 1em 6em;
+  padding: 1em 3em 1em 7em;
+}
+.schedule-list li .event .sponsor {
+  margin: 0;
 }
 .schedule-list li .event-speaker {
   font-size: 13px;
@@ -1175,6 +1192,8 @@ button:hover, button:focus {
   text-overflow: ellipsis;
   font-weight: 600;
   display: block;
+  text-decoration: none;
+  margin-bottom: 8px;
 }
 .schedule-list li img {
   position: absolute;
@@ -1196,10 +1215,10 @@ button:hover, button:focus {
   margin: 0;
 }
 .tito-ticket {
-  background: rgba(252, 209, 22, 0.5);
+  background: rgba(252, 230, 0, 0.5);
   padding: 1em;
   margin-bottom: .5em;
-  border-radius: 0 8px 0 8px;
+  border-radius: 8px 0 8px 0;
   position: relative;
   float: left;
   width: 100%;
@@ -1235,7 +1254,7 @@ button:hover, button:focus {
   right: 1em;
 }
 .tito-ticket-quantity span {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 .tito-ticket-quantity-field {
   text-align: center;
@@ -1276,7 +1295,7 @@ button:hover, button:focus {
   margin: 1em 0;
 }
 .tito-discount-apply-button {
-  background: #fcd116;
+  background: #fce600;
   max-width: 100px;
 }
 .tito-submit {
@@ -1425,6 +1444,81 @@ select {
   filter: none;
 }
 
+.workshop-unit {
+  float: left;
+  width: 100%;
+  margin: 0 1em 1em 0;
+  background: #fff;
+  padding: 2em;
+  position: relative;
+}
+@media screen and (min-width: 940px) {
+  .workshop-unit {
+    width: 48%;
+    float: left;
+  }
+}
+.workshop-unit .more {
+  right: -37px;
+}
+.workshop-unit > button {
+  float: right;
+  width: auto;
+}
+.workshop-unit img {
+  transition: all 1s ease;
+  max-width: 100%;
+}
+.workshop-unit:nth-of-type(1) img {
+  -webkit-clip-path: polygon(96% 6%, 100% 59%, 68% 100%, 5% 85%, 0 53%, 0 0);
+  clip-path: polygon(96% 6%, 100% 59%, 68% 100%, 5% 85%, 0 53%, 0 0);
+}
+.workshop-unit:nth-of-type(1) img:hover {
+  -webkit-clip-path: polygon(100% 0, 100% 53%, 95% 85%, 32% 100%, 0 59%, 4% 6%);
+  clip-path: polygon(100% 0, 100% 53%, 95% 85%, 32% 100%, 100% 59%, 4% 6%);
+}
+.workshop-unit:nth-of-type(2) img {
+  -webkit-clip-path: polygon(50% 7.5%, 100% 15%, 100% 100%, 50% 92.5%, 0 85%, 0 0);
+  clip-path: polygon(50% 7.5%, 100% 15%, 100% 100%, 50% 92.5%, 0 85%, 0 0);
+}
+.workshop-unit:nth-of-type(2) img:hover {
+  -webkit-clip-path: polygon(50% 7.5%, 100% 0, 100% 85%, 50% 92.5%, 0 100%, 0 15%);
+  clip-path: polygon(50% 7.5%, 100% 0, 100% 85%, 50% 92.5%, 0 100%, 0 15%);
+}
+.workshop-unit:nth-of-type(3) img {
+  -webkit-clip-path: polygon(87% 0, 100% 25%, 100% 90%, 23% 100%, 0 68%, 6% 10%);
+  clip-path: polygon(87% 0, 100% 25%, 100% 90%, 23% 100%, 0 68%, 6% 10%);
+}
+.workshop-unit:nth-of-type(3) img:hover {
+  -webkit-clip-path: polygon(13% 0, 94% 10%, 100% 68%, 73% 100%, 0 90%, 0% 25%);
+  clip-path: polygon(13% 0, 94% 10%, 100% 68%, 73% 100%, 0 90%, 0% 25%);
+}
+.workshop-unit:nth-of-type(4) img {
+  -webkit-clip-path: polygon(28% 1%, 100% 7%, 100% 75%, 31% 100%, 0 90%, 0 14%);
+  clip-path: polygon(28% 1%, 100% 7%, 100% 75%, 31% 100%, 0 90%, 0 14%);
+}
+.workshop-unit:nth-of-type(4) img:hover {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+}
+.workshop-unit:nth-of-type(5) img {
+  -webkit-clip-path: polygon(63% 0, 100% 35%, 88% 100%, 31% 100%, 0 75%, 0 17%);
+  clip-path: polygon(63% 0, 100% 35%, 88% 100%, 31% 100%, 0 75%, 0 17%);
+}
+.workshop-unit:nth-of-type(5) img:hover {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+}
+.workshop-details {
+  float: left;
+}
+@media screen and (min-width: 400px) {
+  .workshop-details {
+    float: none;
+    padding-left: 230px;
+  }
+}
+
 table {
   width: 100%;
 }
@@ -1438,6 +1532,113 @@ tr {
   border-bottom: 1px solid #000;
   margin-bottom: 1em;
   padding: 1em 0;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  height: 32px;
+  border-bottom: 1px solid #333;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .tabs {
+    display: none;
+  }
+}
+.tabs li {
+  float: left;
+  margin: 0;
+  cursor: pointer;
+  padding: 3px 21px 0;
+  height: 31px;
+  line-height: 31px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  font-family: "sax-mono", Consolas, Monaco, "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  transition: all 500ms ease;
+}
+.tabs li:hover {
+  background-color: #fce600;
+}
+.tabs li.active {
+  background-color: #F12481;
+  color: #fff;
+  display: block;
+}
+
+.tab_container {
+  border-top: none;
+  clear: both;
+  float: left;
+  width: 100%;
+  overflow: auto;
+}
+
+.tab_content {
+  display: none;
+}
+
+.tab_drawer_heading {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .tab_drawer_heading {
+    background-color: #ccc;
+    margin: 0;
+    padding: 10px 20px 5px;
+    display: block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .d_active {
+    background-color: #F12481;
+    color: #fff;
+  }
+}
+
+.venue {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-right: 1%;
+}
+@media screen and (min-width: 700px) {
+  .venue {
+    width: 48%;
+  }
+}
+.venues {
+  margin-top: 1em;
+  float: left;
+}
+.venue .btn {
+  width: auto;
+  color: #fff;
+  text-decoration: none;
+  bottom: 30px;
+  right: 20px;
+}
+.venue h2 {
+  position: absolute;
+  z-index: 200;
+  left: 1em;
+  bottom: 1.5em;
+}
+.venue h5 {
+  margin-left: 2em;
 }
 
 /*# sourceMappingURL=toolkit.css.map */

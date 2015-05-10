@@ -13,7 +13,7 @@
     background: rgba($secondary, .5);
     padding: 1em;
     margin-bottom: .5em;
-    border-radius: 0 8px 0 8px;
+    border-radius: 8px 0 8px 0;
     position: relative;
     float: left;
     width: 100%;
@@ -30,7 +30,7 @@
       right: 1em;
     }
     &-quantity {
-      span { margin: 0 20px;}
+      span { margin: 0 10px;}
       &-field { text-align: center; }
     }
     &-description {

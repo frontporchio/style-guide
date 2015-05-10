@@ -114,7 +114,6 @@ header:before {
 
 	float: left;
 	width: 100%;
-	padding-bottom: $padding;
   @include clearfix;
 	font-size: 1em;
 }
@@ -130,7 +129,7 @@ header:before {
 
     left: $padding;
     top: $padding;
-    padding: $padding;
+    padding: $padding + 3em $padding $padding;
 
     max-width: 20em;
   }
@@ -161,18 +160,30 @@ h2 {
   text-transform: uppercase;
  }
 
-h3 { text-transform: uppercase; margin: 8px 0; line-height: 1;}
+h3 { 
+  text-transform: uppercase; 
+  margin: 0; 
+  line-height: 1;
+}
 
 h4 {
   display: inline-block;
   padding: 0.5em 1.5em 0.4em;
   background: $neutral;
   color: white;
-  border-radius: 0 8px 0 0;
   margin: 0;
   text-transform: uppercase;
+  font-size: 0.875em;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  z-index: 100;
 }
 
+h5 {
+  margin: 1em 0;
+  text-transform: uppercase;
+}
 
 /* PARAGRAPH */
 
@@ -290,3 +301,7 @@ a, a:visited  {
 
 .expand { text-decoration: none; font-family: $font-mono;}
 .logo {float:left;margin-right:1em;background: #F12481;padding: .35em .5em;}
+img { max-width: 100%; }
+figure { position: relative; float: left; width: 200px;}
+
+.full { margin: 6em 2em 2em; float: left; clear: both; }

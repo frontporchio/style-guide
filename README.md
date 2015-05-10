@@ -11,11 +11,13 @@ Samantha Warren introduced us to the great idea of presenting designed web eleme
 ## Building the project
 
 1. Clone the repo: `git clone https://github.com/frontporchio/style-prototype.git`
-2. Install Dependencies: `npm install`
-3. Start Server & Compile Sass: `grunt`
+2. Install dependencies: `npm install`
+3. Start server & compile Sass: `grunt`
 4. `index.html` will open in your browser
 
 ## TO DOs: 
 
- - fix svg masks in Firefox [like this](https://css-tricks.com/sketchy-avatars-css-clip-path/)
- - MOAR refactoring
+- fix svg masks in Firefox ( [like this](https://css-tricks.com/sketchy-avatars-css-clip-path/) )
+- MOAR refactoring
+- element queries
+- document all the things

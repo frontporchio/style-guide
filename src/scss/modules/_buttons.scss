@@ -1,9 +1,9 @@
-button {
+button, .btn {
   font-family: $font-mono;
   display: inline-block;
   background-color: transparent;
   border: none;
-  border-radius: 0 8px 0 8px;
+  border-radius: 8px 0 8px 0;
   padding: 0.5em 1.5em 0.4em;
   margin-top: -0.1em;
   text-transform: uppercase;
@@ -25,5 +25,5 @@ button {
 .more {
   position: absolute;
   right: -62px; 
-  bottom: 60px;
+  bottom: 40px;
 }
